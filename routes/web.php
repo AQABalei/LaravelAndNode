@@ -10,6 +10,6 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::redirect('/', '/genres');
 Route::get('/genres', 'GenresController@index');
 Route::get('/tracks', 'TracksController@index');
