@@ -49,9 +49,9 @@ class TracksController extends Controller
         $validation = Validator::make($input, [
             'TrackName' => 'required',
             'ComposerName' => 'required',
-            'Milliseconds' => 'numeric',
-            'Bytes' => 'numeric',
-            'UnitPrice' => 'numeric'
+            'Milliseconds' => 'required|numeric',
+            'Bytes' => 'required|numeric',
+            'UnitPrice' => 'required|numeric'
         ]);
         if($validation->fails())
         {
