@@ -17,6 +17,9 @@
 					<td>
 						<a href="/tracks?genre=<?php echo urlencode($genre->Name) ?>">{{$genre->Name}}</a>
 					</td>
+					<td>
+						<a href="/genres/{{$genre->GenreId}}/edit">Edit</a>
+					</td>
 				</tr>
 			@endforeach
 		</table>

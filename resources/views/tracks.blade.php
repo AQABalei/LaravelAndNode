@@ -3,6 +3,7 @@
 @section('title', 'Tracks')
 
 @section('main')
+	<a href="/tracks/new" class="btn btn-default">Add Track</a>
 	<table class="table">
 		<tr>
 			<th>Track Name</th>
