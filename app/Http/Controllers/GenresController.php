@@ -32,7 +32,6 @@ class GenresController extends Controller
     	]);
     	if($validation->fails())
     	{
-    		//dd($genreId);
     		$URL = 'genres/' . $genreId . '/edit';
     		return redirect($URL)
     				->withInput()
