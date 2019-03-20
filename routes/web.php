@@ -17,3 +17,4 @@ Route::get('/genres', 'GenresController@index');
 Route::get('/tracks', 'TracksController@index');
 Route::get('/tracks/new', 'TracksController@index');
 Route::post('/tracks/new', 'TracksController@store');
+Route::get('/docs', 'DocsController@index');
