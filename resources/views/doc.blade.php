@@ -7,7 +7,7 @@
   		This text can be edited by the user.
 	</div>
 	<script>
-		let connection = new WebSocket('ws://localhost:8080');
+		let connection = new WebSocket('ws://localhost:8080' || 'https://nodeforlaravel.herokuapp.com');
 
 		connection.onopen = () => {
 			console.log('Connected from the frontend');
